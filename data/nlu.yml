@@ -18,7 +18,7 @@ nlu:
     - bienvenue
     - salut tout le monde
     - bonjour tout le monde
-    - allo
+    - allô
     - ça va ?
     - bien ou quoi ?
 
@@ -54,7 +54,6 @@ nlu:
     - tout à fait
     - exactement
     - clairement
-    - évidemment que oui
 
 - intent: deny
   examples: |
@@ -73,50 +72,67 @@ nlu:
     - pas du tout
     - ça ne va pas le faire
 
-- intent: mood_great
+- intent: check_balance
   examples: |
-    - parfait
-    - génial
-    - incroyable
-    - je me sens comme un roi
-    - formidable
-    - je me sens très bien
-    - je vais sauver le monde
-    - super excité
-    - extrêmement bien
-    - tellement parfait
-    - tellement bien
-    - trop parfait
-    - je suis en pleine forme
-    - je suis au top
-    - je n'ai jamais été aussi bien
-    - tout va super bien
-    - aujourd'hui est parfait
-    - c'est ma journée !
+    - Quel est mon solde ?
+    - Combien d'argent ai-je sur mon compte ?
+    - Affiche mon solde
+    - Je veux connaître mon solde
+    - Mon compte est à combien ?
+    - Montre-moi combien il reste
+    - Quel est le solde de mon compte courant ?
+    - Vérifie mon solde
+    - Je veux voir mon solde bancaire
 
-- intent: mood_unhappy
+- intent: transfer_money
   examples: |
-    - ma journée était horrible
-    - je suis triste
-    - je ne me sens pas très bien
-    - je suis déçu
-    - super triste
-    - je suis si triste
-    - triste
-    - très triste
-    - malheureux
-    - pas bien
-    - pas très bien
-    - extrêmement triste
-    - trop triste
-    - tellement triste
-    - je ne vais pas bien
-    - c'est une mauvaise journée
-    - j'ai le moral à zéro
-    - tout va mal
-    - ça ne va vraiment pas
-    - je suis déprimé
-    - je me sens seul
+    - Je veux envoyer de l'argent
+    - Transfère 100 tnd à sami
+    - Fais un virement de 200 tnd
+    - Envoyer de l'argent à ma sœur
+    - Transférer de l'argent sur un autre compte
+    - Je veux envoyer de l'argent à ahmed
+    - Fais un virement
+    - Envoie 50 tnd sur mon compte épargne
+    - Payer 30 tnd à ma facture d'électricité
+    - Transfert immédiat de 500 tnd
+
+- intent: show_transaction_history
+  examples: |
+    - Affiche mes dernières transactions
+    - Montre-moi mon historique bancaire
+    - Quelles sont mes dernières dépenses ?
+    - Montre mes paiements récents
+    - Je veux voir mon relevé bancaire
+    - Liste mes transactions
+    - Historique des paiements
+    - Quelles transactions ont été faites récemment ?
+    - Donne-moi un aperçu de mes dépenses
+
+- intent: disable_card
+  examples: |
+    - Bloque ma carte
+    - Désactive ma carte bancaire
+    - J'ai perdu ma carte, désactive-la
+    - Ma carte est volée, bloque-la immédiatement
+    - Désactive ma carte de crédit
+    - Comment bloquer ma carte ?
+    - Arrête ma carte bancaire
+    - Mon portefeuille est perdu, peux-tu bloquer ma carte ?
+    - Coupe ma carte pour le moment
+    - Je veux suspendre l'utilisation de ma carte
+
+- intent: request_loan
+  examples: |
+    - Je veux demander un prêt
+    - Peux-tu m'aider avec un crédit ?
+    - Comment puis-je obtenir un prêt ?
+    - Aide-moi à demander un emprunt
+    - Quels sont les critères pour un prêt ?
+    - Je souhaite un prêt personnel
+    - J'ai besoin d'un crédit bancaire
+    - Puis-je obtenir un prêt pour ma maison ?
+    - Dis-moi comment fonctionne le prêt étudiant
 
 - intent: bot_challenge
   examples: |
