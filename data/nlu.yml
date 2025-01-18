@@ -85,16 +85,15 @@ nlu:
 
 - intent: transfer_money
   examples: |
-    - Je veux envoyer de l'argent
-    - Transfère 100 tnd à sami
-    - Fais un virement de 200 tnd
-    - Envoyer de l'argent à ma sœur
-    - Transférer de l'argent sur un autre compte
-    - Je veux envoyer de l'argent à ahmed
-    - Fais un virement
-    - Envoie 50 tnd sur mon compte épargne
-    - Payer 30 tnd à ma facture d'électricité
-    - Transfert immédiat de 500 tnd
+    - Je veux envoyer [100 tnd](amount) à [sami](recipient)
+    - Transfère [200 tnd](amount) à [ali](recipient)
+    - Fais un virement de [300 tnd](amount) à [mariem](recipient)
+    - Envoyer de l'argent à [ma sœur](recipient)
+    - Transférer de l'argent sur [un autre compte](recipient)
+    - Je veux envoyer [50 tnd](amount) à [ahmed](recipient)
+    - Fais un virement de [1000 tnd](amount) à [mon compte épargne](recipient)
+    - Payer [30 tnd](amount) à [ma facture d'électricité](recipient)
+    - Transfert immédiat de [500 tnd](amount) à [mon frère](recipient)
 
 - intent: show_transaction_history
   examples: |
@@ -149,3 +148,7 @@ nlu:
     - tu peux penser ?
     - tu es vivant ?
     - comment tu fonctionnes ?
+
+entities:
+  - amount
+  - recipient
