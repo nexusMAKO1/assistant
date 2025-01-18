@@ -1,7 +1,7 @@
 version: "3.1"
 
 nlu:
-- intent: greet
+- intent: saluer
   examples: |
     - salut
     - bonjour
@@ -22,7 +22,7 @@ nlu:
     - ça va ?
     - bien ou quoi ?
 
-- intent: goodbye
+- intent: dire_au_revoir
   examples: |
     - à plus
     - au revoir
@@ -40,7 +40,7 @@ nlu:
     - salut et merci
     - prends soin de toi
 
-- intent: affirm
+- intent: confirmer
   examples: |
     - oui
     - ouais
@@ -55,7 +55,7 @@ nlu:
     - exactement
     - clairement
 
-- intent: deny
+- intent: refuser
   examples: |
     - non
     - jamais
@@ -71,7 +71,7 @@ nlu:
     - pas du tout
     - ça ne va pas le faire
 
-- intent: check_balance
+- intent: vérifier_solde
   examples: |
     - Quel est mon solde ?
     - Combien d'argent ai-je sur mon compte ?
@@ -83,19 +83,19 @@ nlu:
     - Vérifie mon solde
     - Je veux voir mon solde bancaire
 
-- intent: transfer_money
+- intent: transférer_argent
   examples: |
-    - Je veux envoyer [100 tnd](amount) à [sami](recipient)
-    - Transfère [200 tnd](amount) à [ali](recipient)
-    - Fais un virement de [300 tnd](amount) à [mariem](recipient)
-    - Envoyer de l'argent à [ma sœur](recipient)
-    - Transférer de l'argent sur [un autre compte](recipient)
-    - Je veux envoyer [50 tnd](amount) à [ahmed](recipient)
-    - Fais un virement de [1000 tnd](amount) à [mon compte épargne](recipient)
-    - Payer [30 tnd](amount) à [ma facture d'électricité](recipient)
-    - Transfert immédiat de [500 tnd](amount) à [mon frère](recipient)
+    - Je veux envoyer [100 tnd](montant) à [sami](bénéficiaire)
+    - Transfère [200 tnd](montant) à [ali](bénéficiaire)
+    - Fais un virement de [300 tnd](montant) à [mariem](bénéficiaire)
+    - Envoyer de l'argent à [ma sœur](bénéficiaire)
+    - Transférer de l'argent sur [un autre compte](bénéficiaire)
+    - Je veux envoyer [50 tnd](montant) à [ahmed](bénéficiaire)
+    - Fais un virement de [1000 tnd](montant) à [mon compte épargne](bénéficiaire)
+    - Payer [30 tnd](montant) à [ma facture d'électricité](bénéficiaire)
+    - Transfert immédiat de [500 tnd](montant) à [mon frère](bénéficiaire)
 
-- intent: show_transaction_history
+- intent: afficher_historique_transactions
   examples: |
     - Affiche mes dernières transactions
     - Montre-moi mon historique bancaire
@@ -107,7 +107,7 @@ nlu:
     - Quelles transactions ont été faites récemment ?
     - Donne-moi un aperçu de mes dépenses
 
-- intent: disable_card
+- intent: désactiver_carte
   examples: |
     - Bloque ma carte
     - Désactive ma carte bancaire
@@ -120,7 +120,7 @@ nlu:
     - Coupe ma carte pour le moment
     - Je veux suspendre l'utilisation de ma carte
 
-- intent: request_loan
+- intent: demander_prêt
   examples: |
     - Je veux demander un prêt
     - Peux-tu m'aider avec un crédit ?
@@ -132,7 +132,7 @@ nlu:
     - Puis-je obtenir un prêt pour ma maison ?
     - Dis-moi comment fonctionne le prêt étudiant
 
-- intent: bot_challenge
+- intent: défi_bot
   examples: |
     - es-tu un bot ?
     - es-tu un humain ?
@@ -150,5 +150,5 @@ nlu:
     - comment tu fonctionnes ?
 
 entities:
-  - amount
-  - recipient
+  - montant
+  - bénéficiaire
