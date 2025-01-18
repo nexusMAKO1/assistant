@@ -1,0 +1,89 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - salut
+    - bonjour
+    - coucou
+    - bonjour à toi
+    - bon matin
+    - bonsoir
+    - hey
+    - salut toi
+    - c'est parti
+    - salut mec
+    - bon matin
+    - bonsoir
+    - bon après-midi
+
+- intent: goodbye
+  examples: |
+    - à plus
+    - au revoir
+    - à plus tard
+    - bonne nuit
+    - bye
+    - au revoir
+    - passe une bonne journée
+    - à bientôt
+    - bye bye
+    - à plus tard
+
+- intent: affirm
+  examples: |
+    - oui
+    - ouais
+    - bien sûr
+    - évidemment
+    - ça marche
+    - correct
+
+- intent: deny
+  examples: |
+    - non
+    - nan
+    - jamais
+    - je ne pense pas
+    - je n'aime pas ça
+    - pas question
+    - pas vraiment
+
+- intent: mood_great
+  examples: |
+    - parfait
+    - génial
+    - incroyable
+    - je me sens comme un roi
+    - formidable
+    - je me sens très bien
+    - je vais sauver le monde
+    - super excité
+    - extrêmement bien
+    - tellement parfait
+    - tellement bien
+    - trop parfait
+
+- intent: mood_unhappy
+  examples: |
+    - ma journée était horrible
+    - je suis triste
+    - je ne me sens pas très bien
+    - je suis déçu
+    - super triste
+    - je suis si triste
+    - triste
+    - très triste
+    - malheureux
+    - pas bien
+    - pas très bien
+    - extrêmement triste
+    - trop triste
+    - tellement triste
+
+- intent: bot_challenge
+  examples: |
+    - es-tu un bot ?
+    - es-tu un humain ?
+    - est-ce que je parle à un bot ?
+    - est-ce que je parle à un humain ?
