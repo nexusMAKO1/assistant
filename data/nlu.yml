@@ -58,7 +58,6 @@ nlu:
 - intent: deny
   examples: |
     - non
-    - nan
     - jamais
     - je ne pense pas
     - je n'aime pas ça
