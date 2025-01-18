@@ -13,9 +13,14 @@ nlu:
     - salut toi
     - c'est parti
     - salut mec
-    - bon matin
-    - bonsoir
     - bon après-midi
+    - hola
+    - bienvenue
+    - salut tout le monde
+    - bonjour tout le monde
+    - allô
+    - ça va ?
+    - bien ou quoi ?
 
 - intent: goodbye
   examples: |
@@ -24,11 +29,16 @@ nlu:
     - à plus tard
     - bonne nuit
     - bye
-    - au revoir
     - passe une bonne journée
     - à bientôt
     - bye bye
-    - à plus tard
+    - à la prochaine
+    - ciao
+    - je file
+    - on se reparle bientôt
+    - bon vent
+    - salut et merci
+    - prends soin de toi
 
 - intent: affirm
   examples: |
@@ -38,6 +48,13 @@ nlu:
     - évidemment
     - ça marche
     - correct
+    - absolument
+    - évidemment que oui
+    - sans hésitation
+    - tout à fait
+    - exactement
+    - clairement
+    - évidemment que oui
 
 - intent: deny
   examples: |
@@ -48,6 +65,13 @@ nlu:
     - je n'aime pas ça
     - pas question
     - pas vraiment
+    - absolument pas
+    - hors de question
+    - non merci
+    - désolé mais non
+    - nope
+    - pas du tout
+    - ça ne va pas le faire
 
 - intent: mood_great
   examples: |
@@ -63,6 +87,12 @@ nlu:
     - tellement parfait
     - tellement bien
     - trop parfait
+    - je suis en pleine forme
+    - je suis au top
+    - je n'ai jamais été aussi bien
+    - tout va super bien
+    - aujourd'hui est parfait
+    - c'est ma journée !
 
 - intent: mood_unhappy
   examples: |
@@ -80,6 +110,13 @@ nlu:
     - extrêmement triste
     - trop triste
     - tellement triste
+    - je ne vais pas bien
+    - c'est une mauvaise journée
+    - j'ai le moral à zéro
+    - tout va mal
+    - ça ne va vraiment pas
+    - je suis déprimé
+    - je me sens seul
 
 - intent: bot_challenge
   examples: |
@@ -87,3 +124,13 @@ nlu:
     - es-tu un humain ?
     - est-ce que je parle à un bot ?
     - est-ce que je parle à un humain ?
+    - tu es un robot ?
+    - tu es réel ?
+    - qui es-tu ?
+    - es-tu une IA ?
+    - es-tu programmé ?
+    - tu es fait de quoi ?
+    - tu es une vraie personne ?
+    - tu peux penser ?
+    - tu es vivant ?
+    - comment tu fonctionnes ?
