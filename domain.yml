@@ -11,24 +11,24 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Bonjour ! Comment ça va ?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  - text: "Voici quelque chose pour te remonter le moral :"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "Est-ce que cela t'a aidé ?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Super, continue comme ça !"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Au revoir"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Je suis un bot, propulsé par Rasa."
 
 session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  session_expiration_time: 60  # Durée d'expiration de la session en minutes
+  carry_over_slots_to_new_session: true  # Conserver les slots pour une nouvelle session
